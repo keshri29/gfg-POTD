@@ -14,7 +14,7 @@ class Solution {
         // code here
         int l=0,h=n-1,mid;
         while(l<=h){
-            int mid=l+(h-l)/2;
+            int mid=(l+h)/2;
             if(arr[mid]==k){
                 return mid;
             }
