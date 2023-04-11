@@ -7,16 +7,24 @@ class Solution{
     public:
     void segregateElements(int arr[],int n)
     {
-        // Your code goes here and this is the native approach to solve means brootforce method
+// Your code goes here and this is the native approach to solve means brootforce method
+/*  function to seggregate negative
+    elements from the given array
+    and moving them to the end  */
         vector<int> temp;
+            /*  in the starting only copy the
+        non-negative elements   */
         for(int i=0;i<n;i++)
         {
         if(arr[i]>=0) temp.push_back(arr[i]);
     }
+     /* copy the negative elements
+        to the end of dummy array   */
      for(int i=0;i<n;i++)
      {
         if(arr[i]<0) temp.push_back(arr[i]);
     }
+     // copy the dummy array to the original array
     for(int i=0;i<n;i++){
         arr[i]=temp[i];
     }
