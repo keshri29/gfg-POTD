@@ -12,8 +12,8 @@ public:
 	    // code here
 	    sort(arr,arr+n);
 	    vector<int> ans;
-	    for(int i=0; i<k; i++){
-	            ans.push_back(arr[n-1-i]);
+	    for(int i=1; i<=k; i++){
+	            ans.push_back(arr[n-i]);
 	    }
 	    return ans;
 }	
