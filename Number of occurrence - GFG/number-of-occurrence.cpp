@@ -12,18 +12,21 @@ public:
 		of occurrences of x, otherwise returns 0. */
 	int count(int arr[], int n, int x) {
 	    // code here
-	   int count =0;
+	  /* int count =0;
+	   
 	    for(int i=0; i<n; i++){
 	        if(arr[i]==x){
 	            count++;
 	        }
-	       // else if(arr[i]!=x){
-	            
-	       //         return 0;
-	            
-	       // }
 	    }
-	 return  count;
+	 return  count;*/
+	 int i=0,cnt=0;
+	 while(i<n){
+	     if(arr[i]==x)
+	        cnt++;
+	        i++;
+	 }
+	 return cnt;
 	}
 };
 
