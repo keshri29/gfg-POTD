@@ -16,7 +16,7 @@ class Solution {
             ans=ans+(d*d*d);
             n=n/10;
         }
-        if(num==ans){
+        if(ans==num){
             return "Yes";
         }
         else{
