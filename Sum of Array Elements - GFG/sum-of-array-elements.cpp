@@ -14,21 +14,21 @@ using namespace std;
 int sumElement(int arr[],int n)
 {
     //Your code here
-    // int sum=0;
-    // int i=0;
-    
-    // while(n>=0){
-    //     sum=sum+arr[i];
-    //     i++;
-    // }
-    // return sum;
-    
-    
     int sum=0;
-    for(int i=0; i<n; i++){
+    int i=0;
+    
+    while(n>i){
         sum=sum+arr[i];
+        i++;
     }
     return sum;
+    
+    
+    // int sum=0;
+    // for(int i=0; i<n; i++){
+    //     sum=sum+arr[i];
+    // }
+    // return sum;
     }
 
 
