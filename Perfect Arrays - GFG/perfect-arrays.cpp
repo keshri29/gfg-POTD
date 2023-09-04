@@ -14,7 +14,7 @@ class Solution{
         // Complete the function
              int i=0;
              int j=n-1;
-             while(i<j){
+             while(n>i){
             if(a[i]==a[j])
             {
                 i++;
