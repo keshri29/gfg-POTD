@@ -31,18 +31,10 @@ int main()
 
 void rotate(int arr[], int n)
 {
-  
-    int i=n-1;
-    int k=n-2;
-    while(i>0){
-       int temp = arr[i];
-       arr[i]=arr[k];
-       arr[k]=temp;
-       
-       i--;
-       k--;
+    for(int i=0; i<n; i++){
+        swap(arr[i],arr[n-1]);
+        arr[i]>>1;
+        // return arr[i];
     }
-    
-    
     
 }
