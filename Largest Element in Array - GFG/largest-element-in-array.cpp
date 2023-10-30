@@ -12,10 +12,8 @@ class Solution
 public:
     int largest(vector<int> &arr, int n)
     {
-        // n = sizeof(arr)/sizeof(arr[0]);
-        sort(arr.begin(), arr.end());
-        return(arr[n-1]);
-        
+        sort(arr.begin(),arr.end());
+        return arr[n-1];
     }
 };
 
